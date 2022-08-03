@@ -76,6 +76,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80256BC8289AA86100DDAADB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		80256BC9289AA86700DDAADB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		80256BCC289AA8CF00DDAADB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		807C44E1288F06D20092D2F7 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +120,9 @@
 		807C44EC288F06D30092D2F7 /* BurgerBrew */ = {
 			isa = PBXGroup;
 			children = (
+				80256BCC289AA8CF00DDAADB /* Utils */,
+				80256BC9289AA86700DDAADB /* View Controllers */,
+				80256BC8289AA86100DDAADB /* Models */,
 				807C44ED288F06D30092D2F7 /* AppDelegate.swift */,
 				807C44EF288F06D30092D2F7 /* SceneDelegate.swift */,
 				807C44F1288F06D30092D2F7 /* ViewController.swift */,
@@ -450,7 +474,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chandimaa.BurgerBrew;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chandim.BurgerBrew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -478,7 +502,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chandimaa.BurgerBrew;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chandim.BurgerBrew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
