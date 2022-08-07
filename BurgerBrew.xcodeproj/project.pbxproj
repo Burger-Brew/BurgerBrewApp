@@ -16,6 +16,9 @@
 		807C4505288F06D40092D2F7 /* BurgerBrewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C4504288F06D40092D2F7 /* BurgerBrewTests.swift */; };
 		807C450F288F06D40092D2F7 /* BurgerBrewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C450E288F06D40092D2F7 /* BurgerBrewUITests.swift */; };
 		807C4511288F06D40092D2F7 /* BurgerBrewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C4510288F06D40092D2F7 /* BurgerBrewUITestsLaunchTests.swift */; };
+		8086E087289CA617006C80BF /* Home_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086E086289CA617006C80BF /* Home_ViewController.swift */; };
+		8086E089289DFDCE006C80BF /* BurgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086E088289DFDCE006C80BF /* BurgerViewController.swift */; };
+		8086E08C289F4E6D006C80BF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086E08B289F4E6C006C80BF /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		807C450A288F06D40092D2F7 /* BurgerBrewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BurgerBrewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		807C450E288F06D40092D2F7 /* BurgerBrewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerBrewUITests.swift; sourceTree = "<group>"; };
 		807C4510288F06D40092D2F7 /* BurgerBrewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerBrewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8086E086289CA617006C80BF /* Home_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_ViewController.swift; sourceTree = "<group>"; };
+		8086E088289DFDCE006C80BF /* BurgerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerViewController.swift; sourceTree = "<group>"; };
+		8086E08B289F4E6C006C80BF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,8 @@
 		80256BC9289AA86700DDAADB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8086E086289CA617006C80BF /* Home_ViewController.swift */,
+				8086E088289DFDCE006C80BF /* BurgerViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -121,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				80256BCC289AA8CF00DDAADB /* Utils */,
+				8086E08A289F4E22006C80BF /* TabBarController */,
 				80256BC9289AA86700DDAADB /* View Controllers */,
 				80256BC8289AA86100DDAADB /* Models */,
 				807C44ED288F06D30092D2F7 /* AppDelegate.swift */,
@@ -149,6 +158,14 @@
 				807C4510288F06D40092D2F7 /* BurgerBrewUITestsLaunchTests.swift */,
 			);
 			path = BurgerBrewUITests;
+			sourceTree = "<group>";
+		};
+		8086E08A289F4E22006C80BF /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				8086E08B289F4E6C006C80BF /* TabBarController.swift */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +302,9 @@
 				807C44F2288F06D30092D2F7 /* ViewController.swift in Sources */,
 				807C44EE288F06D30092D2F7 /* AppDelegate.swift in Sources */,
 				807C44F0288F06D30092D2F7 /* SceneDelegate.swift in Sources */,
+				8086E08C289F4E6D006C80BF /* TabBarController.swift in Sources */,
+				8086E087289CA617006C80BF /* Home_ViewController.swift in Sources */,
+				8086E089289DFDCE006C80BF /* BurgerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
