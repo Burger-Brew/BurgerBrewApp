@@ -19,6 +19,8 @@
 		8086E087289CA617006C80BF /* Home_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086E086289CA617006C80BF /* Home_ViewController.swift */; };
 		8086E089289DFDCE006C80BF /* BurgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086E088289DFDCE006C80BF /* BurgerViewController.swift */; };
 		8086E08C289F4E6D006C80BF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086E08B289F4E6C006C80BF /* TabBarController.swift */; };
+		8086E08F28A1D48D006C80BF /* BurgerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086E08E28A1D48C006C80BF /* BurgerCollectionViewCell.swift */; };
+		8086E09128A1D6DE006C80BF /* Burger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086E09028A1D6DE006C80BF /* Burger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		8086E086289CA617006C80BF /* Home_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_ViewController.swift; sourceTree = "<group>"; };
 		8086E088289DFDCE006C80BF /* BurgerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerViewController.swift; sourceTree = "<group>"; };
 		8086E08B289F4E6C006C80BF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		8086E08E28A1D48C006C80BF /* BurgerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerCollectionViewCell.swift; sourceTree = "<group>"; };
+		8086E09028A1D6DE006C80BF /* Burger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Burger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 		80256BC8289AA86100DDAADB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8086E09028A1D6DE006C80BF /* Burger.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 		807C44EC288F06D30092D2F7 /* BurgerBrew */ = {
 			isa = PBXGroup;
 			children = (
+				8086E08D28A1D44B006C80BF /* CollectionView */,
 				80256BCC289AA8CF00DDAADB /* Utils */,
 				8086E08A289F4E22006C80BF /* TabBarController */,
 				80256BC9289AA86700DDAADB /* View Controllers */,
@@ -166,6 +172,14 @@
 				8086E08B289F4E6C006C80BF /* TabBarController.swift */,
 			);
 			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		8086E08D28A1D44B006C80BF /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				8086E08E28A1D48C006C80BF /* BurgerCollectionViewCell.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +319,8 @@
 				8086E08C289F4E6D006C80BF /* TabBarController.swift in Sources */,
 				8086E087289CA617006C80BF /* Home_ViewController.swift in Sources */,
 				8086E089289DFDCE006C80BF /* BurgerViewController.swift in Sources */,
+				8086E09128A1D6DE006C80BF /* Burger.swift in Sources */,
+				8086E08F28A1D48D006C80BF /* BurgerCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

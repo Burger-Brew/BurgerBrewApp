@@ -6,6 +6,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -231,12 +232,6 @@ Fried Chicken</string>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rs2-nP-V9d">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BurgerTabHeader" translatesAutoresizingMaskIntoConstraints="NO" id="a4F-WF-gKy">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="a4F-WF-gKy" secondAttribute="height" multiplier="69:34" id="h6T-gW-UhG"/>
-                                                </constraints>
-                                            </imageView>
                                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgJ-hr-ppV">
                                                 <rect key="frame" x="0.0" y="204" width="414" height="44"/>
                                                 <color key="barTintColor" red="0.94117647059999998" green="0.6705882353" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -254,15 +249,99 @@ Fried Chicken</string>
                                                     </navigationItem>
                                                 </items>
                                             </navigationBar>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BurgerTabHeader" translatesAutoresizingMaskIntoConstraints="NO" id="a4F-WF-gKy">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="a4F-WF-gKy" secondAttribute="height" multiplier="69:34" id="h6T-gW-UhG"/>
+                                                </constraints>
+                                            </imageView>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="brx-8x-SdE">
+                                                <rect key="frame" x="20" y="299" width="374" height="1201"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JLq-e7-Ehe">
+                                                    <size key="itemSize" width="139" height="250"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BurgerCollectionViewCell" id="GXh-ks-eoQ" customClass="BurgerCollectionViewCell" customModule="BurgerBrew" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="139" height="250"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QLI-4U-fj6">
+                                                            <rect key="frame" x="0.0" y="0.0" width="139" height="250"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nrh-P7-Psk">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="139" height="169"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="169" id="oLS-IG-ZRU"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the burger name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzi-w9-8ar">
+                                                                    <rect key="frame" x="10" y="179" width="119" height="41"/>
+                                                                    <color key="tintColor" systemColor="tintColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="41" id="CmV-A6-iu5"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" systemColor="systemBlueColor"/>
+                                                                    <color key="highlightedColor" systemColor="systemBlueColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burger Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgx-aZ-Hhq">
+                                                                    <rect key="frame" x="10" y="230" width="119" height="21"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="21" id="p9u-RF-wUE"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" red="0.81960784310000001" green="0.13725490200000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="hzi-w9-8ar" firstAttribute="leading" secondItem="QLI-4U-fj6" secondAttribute="leading" constant="10" id="0uL-cC-tfm"/>
+                                                                <constraint firstItem="nrh-P7-Psk" firstAttribute="leading" secondItem="QLI-4U-fj6" secondAttribute="leading" id="22n-Wi-9ak"/>
+                                                                <constraint firstAttribute="trailing" secondItem="nrh-P7-Psk" secondAttribute="trailing" id="9WQ-JQ-IuL"/>
+                                                                <constraint firstItem="Bgx-aZ-Hhq" firstAttribute="leading" secondItem="QLI-4U-fj6" secondAttribute="leading" constant="10" id="KZG-81-ZZz"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Bgx-aZ-Hhq" secondAttribute="trailing" constant="10" id="eBb-LZ-2hf"/>
+                                                                <constraint firstItem="Bgx-aZ-Hhq" firstAttribute="top" secondItem="hzi-w9-8ar" secondAttribute="bottom" constant="10" id="hbz-Br-jOA"/>
+                                                                <constraint firstItem="nrh-P7-Psk" firstAttribute="top" secondItem="QLI-4U-fj6" secondAttribute="top" id="k1y-na-yEx"/>
+                                                                <constraint firstAttribute="trailing" secondItem="hzi-w9-8ar" secondAttribute="trailing" constant="10" id="mOn-ph-xgO"/>
+                                                                <constraint firstItem="hzi-w9-8ar" firstAttribute="top" secondItem="nrh-P7-Psk" secondAttribute="bottom" constant="10" id="qFO-eB-Kpd"/>
+                                                                <constraint firstItem="nrh-P7-Psk" firstAttribute="centerX" secondItem="hzi-w9-8ar" secondAttribute="centerX" id="uBu-We-tOv"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <size key="customSize" width="139" height="250"/>
+                                                        <connections>
+                                                            <outlet property="burgerImageView" destination="nrh-P7-Psk" id="Dg6-J6-C7V"/>
+                                                            <outlet property="burgerPrice" destination="Bgx-aZ-Hhq" id="oZC-co-1YN"/>
+                                                            <outlet property="burgerTitle" destination="hzi-w9-8ar" id="bYX-23-74M"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select your choice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRL-X5-grt">
+                                                <rect key="frame" x="10" y="258" width="394" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="brx-8x-SdE" secondAttribute="trailing" constant="20" id="8hi-gz-Akf"/>
                                             <constraint firstItem="a4F-WF-gKy" firstAttribute="leading" secondItem="rs2-nP-V9d" secondAttribute="leading" id="8wT-5H-S2C"/>
                                             <constraint firstItem="hgJ-hr-ppV" firstAttribute="top" secondItem="a4F-WF-gKy" secondAttribute="bottom" id="A9k-22-lKW"/>
                                             <constraint firstAttribute="trailing" secondItem="hgJ-hr-ppV" secondAttribute="trailing" id="HYd-En-Qbq"/>
+                                            <constraint firstItem="brx-8x-SdE" firstAttribute="leading" secondItem="rs2-nP-V9d" secondAttribute="leading" constant="20" id="KF1-h5-Nqf"/>
+                                            <constraint firstItem="brx-8x-SdE" firstAttribute="top" secondItem="gRL-X5-grt" secondAttribute="bottom" constant="20" id="Kb5-Dv-gVp"/>
                                             <constraint firstAttribute="height" constant="1500" id="Rjf-GT-pm2"/>
+                                            <constraint firstItem="gRL-X5-grt" firstAttribute="top" secondItem="hgJ-hr-ppV" secondAttribute="bottom" constant="10" id="Wcb-dx-qsL"/>
+                                            <constraint firstAttribute="trailing" secondItem="gRL-X5-grt" secondAttribute="trailing" constant="10" id="bqr-xH-bbz"/>
                                             <constraint firstAttribute="trailing" secondItem="a4F-WF-gKy" secondAttribute="trailing" id="m2M-L2-PIi"/>
+                                            <constraint firstItem="gRL-X5-grt" firstAttribute="leading" secondItem="rs2-nP-V9d" secondAttribute="leading" constant="10" id="rnH-Nq-zbe"/>
                                             <constraint firstItem="hgJ-hr-ppV" firstAttribute="leading" secondItem="rs2-nP-V9d" secondAttribute="leading" id="vSD-U3-kmr"/>
+                                            <constraint firstAttribute="bottom" secondItem="brx-8x-SdE" secondAttribute="bottom" id="vmX-me-lfx"/>
                                             <constraint firstItem="a4F-WF-gKy" firstAttribute="top" secondItem="rs2-nP-V9d" secondAttribute="top" id="xrV-ch-fXE"/>
                                         </constraints>
                                     </view>
@@ -288,6 +367,9 @@ Fried Chicken</string>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="burger" id="p09-c6-fUG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="brx-8x-SdE" id="0W6-hF-BwB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8IG-pO-9Qw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1102,6 +1184,9 @@ Fried Chicken</string>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
