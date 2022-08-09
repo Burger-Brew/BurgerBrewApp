@@ -10,11 +10,14 @@ import UIKit
 class BurgerViewController: UIViewController {
 
     //Declare outlets
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.collectionViewLayout = UICollectionViewFlowLayout()
     }
     
     @IBAction func btnBack(_ sender: Any) {
@@ -22,6 +25,7 @@ class BurgerViewController: UIViewController {
         let homeView = storyboard.instantiateViewController(withIdentifier:"homeView") as! Home_ViewController
         self.present(homeView, animated: true)
     }
+    
     
 
     /*
@@ -34,4 +38,25 @@ class BurgerViewController: UIViewController {
     }
     */
 
+}
+
+extension BurgerViewController: UICollectionViewDataSource{
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        Swift.print("Count : \(burgers.count)")
+        return burgers.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BurgerCollectionViewCell", for: indexPath) as! BurgerCollectionViewCell
+        cell.setup(with: burgers[indexPath.row])
+        
+        return cell
+    }
+}
+
+extension BurgerViewController: UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 139, height: 250)
+    }
 }
