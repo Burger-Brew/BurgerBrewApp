@@ -9,6 +9,7 @@ import UIKit
 
 class DessertCollectionViewCell: UICollectionViewCell {
     
+    static let identifier = String(describing: DessertCollectionViewCell.self)
     //Declare the outlets
     @IBOutlet weak var dessertImageView: UIImageView!
     @IBOutlet weak var dessertTitle: UILabel!

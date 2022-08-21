@@ -21,16 +21,6 @@ class BeverageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     @IBAction func btnAction(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -41,7 +31,7 @@ class BeverageViewController: UIViewController {
 
 }
 
-extension BeverageViewController: UICollectionViewDataSource{
+extension BeverageViewController: UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return beverage.count
     }
@@ -50,6 +40,19 @@ extension BeverageViewController: UICollectionViewDataSource{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BeverageCollectionViewCell", for: indexPath) as! BeverageCollectionViewCell
         cell.setup(with: beverage[indexPath.row])
         return cell
+    }
+    
+    // Connect with Beverage Detailed ViewController page
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        
+        let controller = storyboard.instantiateViewController(withIdentifier:"BeverageDetailedViewController") as! BeverageDetailedViewController
+        controller.beverage = beverage[indexPath.row]
+        self.present(controller, animated: true, completion: nil)
+       // let controller = BurgerDetailedViewController.instantiate()
+        
     }
 }
 

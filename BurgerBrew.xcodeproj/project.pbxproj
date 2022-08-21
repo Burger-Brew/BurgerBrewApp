@@ -27,6 +27,11 @@
 		8086E09C28A506A6006C80BF /* Beverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086E09B28A506A6006C80BF /* Beverage.swift */; };
 		8086E09E28A50D12006C80BF /* BeverageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086E09D28A50D12006C80BF /* BeverageCollectionViewCell.swift */; };
 		8086E0A028A50E54006C80BF /* BeverageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086E09F28A50E54006C80BF /* BeverageViewController.swift */; };
+		DA94AC7128B0B8000098157F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA94AC7028B0B8000098157F /* UIViewController+Extension.swift */; };
+		DA94AC7328B0D1EA0098157F /* BurgerDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA94AC7228B0D1EA0098157F /* BurgerDetailedViewController.swift */; };
+		DA94AC7528B1FCD40098157F /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA94AC7428B1FCD40098157F /* String+Extension.swift */; };
+		DA94AC7728B21E620098157F /* DessetDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA94AC7628B21E620098157F /* DessetDetailsViewController.swift */; };
+		DA94AC7928B25B1D0098157F /* BeverageDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA94AC7828B25B1D0098157F /* BeverageDetailedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +76,11 @@
 		8086E09B28A506A6006C80BF /* Beverage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beverage.swift; sourceTree = "<group>"; };
 		8086E09D28A50D12006C80BF /* BeverageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageCollectionViewCell.swift; sourceTree = "<group>"; };
 		8086E09F28A50E54006C80BF /* BeverageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageViewController.swift; sourceTree = "<group>"; };
+		DA94AC7028B0B8000098157F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		DA94AC7228B0D1EA0098157F /* BurgerDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerDetailedViewController.swift; sourceTree = "<group>"; };
+		DA94AC7428B1FCD40098157F /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		DA94AC7628B21E620098157F /* DessetDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessetDetailsViewController.swift; sourceTree = "<group>"; };
+		DA94AC7828B25B1D0098157F /* BeverageDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageDetailedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +125,9 @@
 				8086E088289DFDCE006C80BF /* BurgerViewController.swift */,
 				8086E09728A48BC0006C80BF /* DessertViewController.swift */,
 				8086E09F28A50E54006C80BF /* BeverageViewController.swift */,
+				DA94AC7228B0D1EA0098157F /* BurgerDetailedViewController.swift */,
+				DA94AC7628B21E620098157F /* DessetDetailsViewController.swift */,
+				DA94AC7828B25B1D0098157F /* BeverageDetailedViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -149,6 +162,7 @@
 		807C44EC288F06D30092D2F7 /* BurgerBrew */ = {
 			isa = PBXGroup;
 			children = (
+				DA94AC6F28B0B3EC0098157F /* Extensions */,
 				8086E08D28A1D44B006C80BF /* CollectionViewCells */,
 				80256BCC289AA8CF00DDAADB /* Utils */,
 				8086E08A289F4E22006C80BF /* TabBarController */,
@@ -198,6 +212,15 @@
 				8086E09D28A50D12006C80BF /* BeverageCollectionViewCell.swift */,
 			);
 			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		DA94AC6F28B0B3EC0098157F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA94AC7028B0B8000098157F /* UIViewController+Extension.swift */,
+				DA94AC7428B1FCD40098157F /* String+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,13 +357,18 @@
 				807C44F2288F06D30092D2F7 /* ViewController.swift in Sources */,
 				8086E0A028A50E54006C80BF /* BeverageViewController.swift in Sources */,
 				807C44EE288F06D30092D2F7 /* AppDelegate.swift in Sources */,
+				DA94AC7128B0B8000098157F /* UIViewController+Extension.swift in Sources */,
 				807C44F0288F06D30092D2F7 /* SceneDelegate.swift in Sources */,
 				8086E08C289F4E6D006C80BF /* TabBarController.swift in Sources */,
 				8086E087289CA617006C80BF /* Home_ViewController.swift in Sources */,
 				8086E089289DFDCE006C80BF /* BurgerViewController.swift in Sources */,
+				DA94AC7528B1FCD40098157F /* String+Extension.swift in Sources */,
+				DA94AC7728B21E620098157F /* DessetDetailsViewController.swift in Sources */,
+				DA94AC7928B25B1D0098157F /* BeverageDetailedViewController.swift in Sources */,
 				8086E09C28A506A6006C80BF /* Beverage.swift in Sources */,
 				8086E09128A1D6DE006C80BF /* Burger.swift in Sources */,
 				8086E09828A48BC0006C80BF /* DessertViewController.swift in Sources */,
+				DA94AC7328B0D1EA0098157F /* BurgerDetailedViewController.swift in Sources */,
 				8086E09628A2E249006C80BF /* DessertCollectionViewCell.swift in Sources */,
 				8086E09E28A50D12006C80BF /* BeverageCollectionViewCell.swift in Sources */,
 				8086E09428A2DF40006C80BF /* Dessert.swift in Sources */,

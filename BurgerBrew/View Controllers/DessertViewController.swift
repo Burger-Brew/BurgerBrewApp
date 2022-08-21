@@ -27,20 +27,9 @@ class DessertViewController: UIViewController {
         self.present(homeView, animated: true)
     }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
-extension DessertViewController: UICollectionViewDataSource{
+extension DessertViewController: UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dessert.count
     }
@@ -49,6 +38,19 @@ extension DessertViewController: UICollectionViewDataSource{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DessertCollectionViewCell", for: indexPath) as! DessertCollectionViewCell
         cell.setup(with: dessert[indexPath.row])
         return cell
+    }
+    
+    // Connect with Desset Details ViewController page
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        
+        let controller = storyboard.instantiateViewController(withIdentifier:"DessetDetailsViewController") as! DessetDetailsViewController
+        controller.dessert = dessert[indexPath.row]
+        self.present(controller, animated: true, completion: nil)
+       // let controller = BurgerDetailedViewController.instantiate()
+        
     }
 }
 
