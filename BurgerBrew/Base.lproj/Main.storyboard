@@ -928,16 +928,17 @@ Fried Chicken</string>
                         <outlet property="burgerImage" destination="RJU-BV-6NK" id="z4m-BU-5KR"/>
                         <outlet property="burgerPrice" destination="WQT-dH-C8Y" id="XpD-0u-Lj3"/>
                         <outlet property="burgerTitle" destination="cLS-p9-2wP" id="pcn-uW-ayB"/>
+                        <outlet property="qtyValue" destination="Qhg-Ji-i9q" id="ciz-DT-imZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6P2-LW-Fpa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2000.0000000000002" y="996.42857142857133"/>
         </scene>
-        <!--View Controller-->
+        <!--Cart View Controller-->
         <scene sceneID="bQZ-J4-ag3">
             <objects>
-                <viewController id="JDd-or-dVW" sceneMemberID="viewController">
+                <viewController id="JDd-or-dVW" customClass="CartViewController" customModule="BurgerBrew" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sgG-Hu-c2w">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1117,7 +1118,7 @@ Fried Chicken</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street 1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtg-qF-WBx">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtg-qF-WBx">
                                         <rect key="frame" x="0.0" y="268.5" width="394" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -1128,7 +1129,7 @@ Fried Chicken</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street 2:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbb-m9-M2I">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbb-m9-M2I">
                                         <rect key="frame" x="0.0" y="339" width="394" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -1318,6 +1319,7 @@ Fried Chicken</string>
                         <outlet property="dessertImage" destination="4nc-R3-LWe" id="iB1-Kc-1HM"/>
                         <outlet property="dessertName" destination="7Qf-cE-vOT" id="5qD-KR-IY4"/>
                         <outlet property="dessertPrice" destination="G5b-rd-iyu" id="AB1-q9-05S"/>
+                        <outlet property="qty" destination="FW5-2y-CSg" id="ukb-MV-mMz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eCK-E8-NVK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1408,9 +1410,12 @@ Fried Chicken</string>
                                     <segment title="Large"/>
                                 </segments>
                             </segmentedControl>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="HSt-Iy-lsX">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="HSt-Iy-lsX">
                                 <rect key="frame" x="202" y="459" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="changeQty:" destination="Z05-RA-ppB" eventType="valueChanged" id="G3E-Zi-xQl"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0v1-I2-f95">
                                 <rect key="frame" x="280" y="430" width="8" height="21"/>
@@ -1423,7 +1428,7 @@ Fried Chicken</string>
                                 <rect key="frame" x="20" y="732" width="374" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Place Order">
+                                <buttonConfiguration key="configuration" style="filled" title="Add To Cart">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" red="0.1843137255" green="0.74901960779999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
@@ -1448,6 +1453,7 @@ Fried Chicken</string>
                         <outlet property="beverageImage" destination="NZI-OX-ULe" id="NIY-gr-lN8"/>
                         <outlet property="beverageName" destination="T5T-6q-DAk" id="iNN-RH-ZgM"/>
                         <outlet property="beveragePrice" destination="5ND-g4-qLY" id="RYc-Ia-KJy"/>
+                        <outlet property="qtyValue" destination="HSt-Iy-lsX" id="zPG-4e-sdW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jkZ-oe-Kbp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

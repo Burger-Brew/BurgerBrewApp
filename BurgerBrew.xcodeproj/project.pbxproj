@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E82C95328B35BA1003A079F /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E82C95228B35BA1003A079F /* CartViewController.swift */; };
+		1EFBF0E328B345C200F975FF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1EFBF0E128B345C200F975FF /* Model.xcdatamodeld */; };
+		1EFBF0EA28B3479200F975FF /* DeliveryDetails+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFBF0E628B3479200F975FF /* DeliveryDetails+CoreDataClass.swift */; };
+		1EFBF0EB28B3479200F975FF /* DeliveryDetails+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFBF0E728B3479200F975FF /* DeliveryDetails+CoreDataProperties.swift */; };
+		1EFBF0EE28B3497500F975FF /* CartList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFBF0EC28B3497500F975FF /* CartList+CoreDataClass.swift */; };
+		1EFBF0EF28B3497500F975FF /* CartList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFBF0ED28B3497500F975FF /* CartList+CoreDataProperties.swift */; };
 		807C44EE288F06D30092D2F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C44ED288F06D30092D2F7 /* AppDelegate.swift */; };
 		807C44F0288F06D30092D2F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C44EF288F06D30092D2F7 /* SceneDelegate.swift */; };
 		807C44F2288F06D30092D2F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807C44F1288F06D30092D2F7 /* ViewController.swift */; };
@@ -52,6 +58,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E82C95228B35BA1003A079F /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		1EFBF0E228B345C200F975FF /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		1EFBF0E628B3479200F975FF /* DeliveryDetails+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeliveryDetails+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1EFBF0E728B3479200F975FF /* DeliveryDetails+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeliveryDetails+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1EFBF0EC28B3497500F975FF /* CartList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CartList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1EFBF0ED28B3497500F975FF /* CartList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CartList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		807C44EA288F06D30092D2F7 /* BurgerBrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurgerBrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		807C44ED288F06D30092D2F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		807C44EF288F06D30092D2F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +140,7 @@
 				DA94AC7228B0D1EA0098157F /* BurgerDetailedViewController.swift */,
 				DA94AC7628B21E620098157F /* DessetDetailsViewController.swift */,
 				DA94AC7828B25B1D0098157F /* BeverageDetailedViewController.swift */,
+				1E82C95228B35BA1003A079F /* CartViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -162,6 +175,11 @@
 		807C44EC288F06D30092D2F7 /* BurgerBrew */ = {
 			isa = PBXGroup;
 			children = (
+				1EFBF0E128B345C200F975FF /* Model.xcdatamodeld */,
+				1EFBF0EC28B3497500F975FF /* CartList+CoreDataClass.swift */,
+				1EFBF0ED28B3497500F975FF /* CartList+CoreDataProperties.swift */,
+				1EFBF0E628B3479200F975FF /* DeliveryDetails+CoreDataClass.swift */,
+				1EFBF0E728B3479200F975FF /* DeliveryDetails+CoreDataProperties.swift */,
 				DA94AC6F28B0B3EC0098157F /* Extensions */,
 				8086E08D28A1D44B006C80BF /* CollectionViewCells */,
 				80256BCC289AA8CF00DDAADB /* Utils */,
@@ -354,13 +372,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EFBF0EB28B3479200F975FF /* DeliveryDetails+CoreDataProperties.swift in Sources */,
+				1EFBF0EA28B3479200F975FF /* DeliveryDetails+CoreDataClass.swift in Sources */,
 				807C44F2288F06D30092D2F7 /* ViewController.swift in Sources */,
 				8086E0A028A50E54006C80BF /* BeverageViewController.swift in Sources */,
 				807C44EE288F06D30092D2F7 /* AppDelegate.swift in Sources */,
 				DA94AC7128B0B8000098157F /* UIViewController+Extension.swift in Sources */,
 				807C44F0288F06D30092D2F7 /* SceneDelegate.swift in Sources */,
+				1E82C95328B35BA1003A079F /* CartViewController.swift in Sources */,
 				8086E08C289F4E6D006C80BF /* TabBarController.swift in Sources */,
 				8086E087289CA617006C80BF /* Home_ViewController.swift in Sources */,
+				1EFBF0E328B345C200F975FF /* Model.xcdatamodeld in Sources */,
+				1EFBF0EF28B3497500F975FF /* CartList+CoreDataProperties.swift in Sources */,
 				8086E089289DFDCE006C80BF /* BurgerViewController.swift in Sources */,
 				DA94AC7528B1FCD40098157F /* String+Extension.swift in Sources */,
 				DA94AC7728B21E620098157F /* DessetDetailsViewController.swift in Sources */,
@@ -371,6 +394,7 @@
 				DA94AC7328B0D1EA0098157F /* BurgerDetailedViewController.swift in Sources */,
 				8086E09628A2E249006C80BF /* DessertCollectionViewCell.swift in Sources */,
 				8086E09E28A50D12006C80BF /* BeverageCollectionViewCell.swift in Sources */,
+				1EFBF0EE28B3497500F975FF /* CartList+CoreDataClass.swift in Sources */,
 				8086E09428A2DF40006C80BF /* Dessert.swift in Sources */,
 				8086E08F28A1D48D006C80BF /* BurgerCollectionViewCell.swift in Sources */,
 			);
@@ -714,6 +738,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1EFBF0E128B345C200F975FF /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1EFBF0E228B345C200F975FF /* Model.xcdatamodel */,
+			);
+			currentVersion = 1EFBF0E228B345C200F975FF /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 807C44E2288F06D20092D2F7 /* Project object */;
 }

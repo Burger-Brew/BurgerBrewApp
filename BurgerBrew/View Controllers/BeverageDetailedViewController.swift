@@ -8,11 +8,16 @@
 import UIKit
 
 class BeverageDetailedViewController: UIViewController {
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    private var models = [CartList]()
 
     @IBOutlet weak var beverageName: UILabel!
     @IBOutlet weak var beverageImage: UIImageView!
     @IBOutlet weak var beveragePrice: UILabel!
     @IBOutlet weak var beverageDescription: UILabel!
+    @IBOutlet weak var qtyValue: UIStepper!
     
     var beverage: Beverage!
     
@@ -29,8 +34,30 @@ class BeverageDetailedViewController: UIViewController {
         beverageDescription.text = beverage.description
     }
     
+
+    
+    
     
     @IBAction func btnPlaceOrder(_ sender: Any) {
+        addToCart()
+    }
+    
+    
+   
+    func addToCart(){
+        let newItem = CartList(context: context)
+        
+        newItem.itemName = beverageName.text
+        newItem.qty = Double(qtyValue.value)
+        newItem.price = Double(beveragePrice.text!)!
+        newItem.subTotal = Double(beveragePrice.text!)! * newItem.qty
+        
+        do {
+            try context.save()
+        }catch {
+            
+        }
+        
     }
     
     

@@ -8,11 +8,18 @@
 import UIKit
 
 class DessetDetailsViewController: UIViewController {
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    private var models = [CartList]()
+    
 
     @IBOutlet weak var dessertName: UILabel!
     @IBOutlet weak var dessertImage: UIImageView!
     @IBOutlet weak var dessertPrice: UILabel!
     @IBOutlet weak var dessertDescription: UILabel!
+    
+    @IBOutlet weak var qtyValue: UIStepper!
     
     var dessert: Dessert!
     
@@ -30,6 +37,23 @@ class DessetDetailsViewController: UIViewController {
     }
     
     @IBAction func btnPlaceOrderClicked(_ sender: Any) {
+        addToCart()
+        
+    }
+    
+    func addToCart(){
+        let newItem = CartList(context: context)
+        
+        newItem.itemName = dessertName.text
+        newItem.qty = Double(qtyValue.value)
+        newItem.price = Double(dessertPrice.text!)!
+        newItem.subTotal = Double(dessertPrice.text!)! * newItem.qty
+        
+        do {
+            try context.save()
+        }catch {
+            
+        }
         
     }
     

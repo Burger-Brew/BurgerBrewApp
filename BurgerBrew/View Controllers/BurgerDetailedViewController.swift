@@ -8,11 +8,17 @@
 import UIKit
 
 class BurgerDetailedViewController: UIViewController {
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    private var models = [CartList]()
 
     @IBOutlet weak var burgerTitle: UILabel!
     @IBOutlet weak var burgerImage: UIImageView!
     @IBOutlet weak var burgerPrice: UILabel!
     @IBOutlet weak var burgerDescription: UILabel!
+    
+    @IBOutlet weak var qtyValue: UIStepper!
     
     var burger: Burger!
     
@@ -31,7 +37,26 @@ class BurgerDetailedViewController: UIViewController {
     }
 
     @IBAction func placeOrderBtnClicked(_ sender: Any) {
+        addToCart()
+    }
     
+    
+    
+   
+    func addToCart(){
+        let newItem = CartList(context: context)
+        
+        newItem.itemName = burgerTitle.text
+        newItem.qty = Double(qtyValue.value)
+        newItem.price = Double(burgerPrice.text!)!
+        newItem.subTotal = Double(burgerPrice.text!)! * newItem.qty
+        
+        do {
+            try context.save()
+        }catch {
+            
+        }
+        
     }
   
     override func viewDidLoad() {
