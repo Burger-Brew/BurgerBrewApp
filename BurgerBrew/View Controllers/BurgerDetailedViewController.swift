@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class BurgerDetailedViewController: UIViewController {
     
@@ -17,7 +18,6 @@ class BurgerDetailedViewController: UIViewController {
     @IBOutlet weak var burgerImage: UIImageView!
     @IBOutlet weak var burgerPrice: UILabel!
     @IBOutlet weak var burgerDescription: UILabel!
-    
     @IBOutlet weak var qtyValue: UIStepper!
     
     var burger: Burger!
@@ -28,7 +28,6 @@ class BurgerDetailedViewController: UIViewController {
         self.present(burgerView, animated: true)
         
     }
-    
     private func populateView() {
         burgerImage.image = burger.image
         burgerTitle.text = burger.title
@@ -36,23 +35,27 @@ class BurgerDetailedViewController: UIViewController {
         burgerDescription.text = burger.description
     }
 
-    @IBAction func placeOrderBtnClicked(_ sender: Any) {
-        addToCart()
+    @IBOutlet weak var qtyAmount: UILabel!
+    
+    @IBAction func qtyValueChange(_ sender: Any) {
+        qtyAmount.text = String(qtyValue.value)
     }
     
     
+    @IBAction func addToCart(_ sender: Any) {
+        addToCart()
+    }
     
-   
     func addToCart(){
         let newItem = CartList(context: context)
         
-        newItem.itemName = burgerTitle.text
+        newItem.itemName = burger.title
         newItem.qty = Double(qtyValue.value)
-        newItem.price = Double(burgerPrice.text!)!
-        newItem.subTotal = Double(burgerPrice.text!)! * newItem.qty
+        newItem.price = Double(burger.price)!
+        newItem.subTotal = newItem.price * newItem.qty
         
         do {
-            try context.save()
+            try self.context.save()
         }catch {
             
         }

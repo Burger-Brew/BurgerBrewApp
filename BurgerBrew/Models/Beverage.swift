@@ -16,8 +16,8 @@ struct Beverage{
 }
 
 let beverage: [Beverage] = [
-    Beverage(image: #imageLiteral(resourceName: "Ice Lemon Latte.png"), title: "Ice Lemon Latte", price: "Rs. 800.00", description: "Ice, white sugar"),
-    Beverage(image: #imageLiteral(resourceName: "Chocolate Overdosed.jpeg"), title: "Chocolate Overdosed", price: "Rs. 1200.00", description: "Chocolate milk, vanilla nonfat frozen yogurt, ice"),
-    Beverage(image: #imageLiteral(resourceName: "Berries'O'Berries.jpeg"), title: "Berries'O'Berries", price: "Rs. 1500.00", description: "Strawberry milk, vanilla nonfat frozen yogurt, ice"),
-    Beverage(image: #imageLiteral(resourceName: "Orange Crush.png"), title: "Orange Crush", price: "Rs. 1000.00", description: "Orange, white sugar")
+    Beverage(image: #imageLiteral(resourceName: "Ice Lemon Latte.png"), title: "Ice Lemon Latte", price: "800.00", description: "Ice, white sugar"),
+    Beverage(image: #imageLiteral(resourceName: "Chocolate Overdosed.jpeg"), title: "Chocolate Overdosed", price: "1200.00", description: "Chocolate milk, vanilla nonfat frozen yogurt, ice"),
+    Beverage(image: #imageLiteral(resourceName: "Berries'O'Berries.jpeg"), title: "Berries'O'Berries", price: "1500.00", description: "Strawberry milk, vanilla nonfat frozen yogurt, ice"),
+    Beverage(image: #imageLiteral(resourceName: "Orange Crush.png"), title: "Orange Crush", price: "1000.00", description: "Orange, white sugar")
 ]

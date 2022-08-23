@@ -6,13 +6,13 @@
 //
 
 import UIKit
+import CoreData
 
 class DessetDetailsViewController: UIViewController {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     private var models = [CartList]()
-    
 
     @IBOutlet weak var dessertName: UILabel!
     @IBOutlet weak var dessertImage: UIImageView!
@@ -36,21 +36,27 @@ class DessetDetailsViewController: UIViewController {
         dessertDescription.text = dessert.description
     }
     
-    @IBAction func btnPlaceOrderClicked(_ sender: Any) {
+    @IBOutlet weak var qtyAmount: UILabel!
+    
+    @IBAction func qtyValueChange(_ sender: Any) {
+        qtyAmount.text = String(qtyValue.value)
+    }
+    
+
+    @IBAction func addToCart(_ sender: Any) {
         addToCart()
-        
     }
     
     func addToCart(){
         let newItem = CartList(context: context)
         
-        newItem.itemName = dessertName.text
+        newItem.itemName = dessert.title
         newItem.qty = Double(qtyValue.value)
-        newItem.price = Double(dessertPrice.text!)!
-        newItem.subTotal = Double(dessertPrice.text!)! * newItem.qty
+        newItem.price = Double(dessert.price)!
+        newItem.subTotal = newItem.price * newItem.qty
         
         do {
-            try context.save()
+            try self.context.save()
         }catch {
             
         }
