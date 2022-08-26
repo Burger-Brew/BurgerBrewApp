@@ -25,7 +25,8 @@ class BeverageDetailedViewController: UIViewController {
     
     @IBAction func btnBack(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let beverageView = storyboard.instantiateViewController(withIdentifier:"BeverageTabView") as! BeverageViewController
+        let beverageView = storyboard.instantiateViewController(withIdentifier:"tabBarController") as! TabBarController
+        beverageView.selectedPassedIndex = 2
         self.present(beverageView, animated: true)
     }
     

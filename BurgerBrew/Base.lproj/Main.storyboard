@@ -236,9 +236,6 @@ Fried Chicken</string>
                                                                 <action selector="btnAction:" destination="f2x-Fg-CUK" id="S4s-bK-XbQ"/>
                                                             </connections>
                                                         </barButtonItem>
-                                                        <barButtonItem key="rightBarButtonItem" title="Cart" id="xwi-xY-cqb">
-                                                            <color key="tintColor" red="0.1843137255" green="0.74901960779999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </barButtonItem>
                                                     </navigationItem>
                                                 </items>
                                             </navigationBar>
@@ -383,9 +380,6 @@ Fried Chicken</string>
                                                                 <action selector="btnAction:" destination="geF-Vk-RH3" id="Nwi-1t-o3c"/>
                                                             </connections>
                                                         </barButtonItem>
-                                                        <barButtonItem key="rightBarButtonItem" title="Cart" id="CC0-Ok-1jJ">
-                                                            <color key="tintColor" red="0.1843137255" green="0.74901960779999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </barButtonItem>
                                                     </navigationItem>
                                                 </items>
                                             </navigationBar>
@@ -524,9 +518,6 @@ Fried Chicken</string>
                                                             <connections>
                                                                 <action selector="btnBack:" destination="L3t-1Y-e8q" id="VgT-yf-prY"/>
                                                             </connections>
-                                                        </barButtonItem>
-                                                        <barButtonItem key="rightBarButtonItem" title="Cart" id="j32-jr-mbs">
-                                                            <color key="tintColor" red="0.1843137255" green="0.74901960779999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                                         </barButtonItem>
                                                     </navigationItem>
                                                 </items>
@@ -680,131 +671,6 @@ Fried Chicken</string>
             </objects>
             <point key="canvasLocation" x="-520" y="-691"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="U8Q-4l-9A0">
-            <objects>
-                <viewController id="awg-go-Ohl" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="c55-5K-7Pw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Kz-Qk-icm">
-                                <rect key="frame" x="0.0" y="204" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" red="0.94117647059999998" green="0.6705882353" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <items>
-                                    <navigationItem title="Beverage" id="BdI-oh-k4E">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="M3P-0M-4bb"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Cart" id="3DL-WO-CQz">
-                                            <color key="tintColor" red="0.1843137255" green="0.74901960779999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2-1" translatesAutoresizingMaskIntoConstraints="NO" id="605-aN-FTP">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please select your choice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1U7-G7-MNt">
-                                <rect key="frame" x="110" y="273" width="191" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Promo-Facebook-Facebook feed-30" translatesAutoresizingMaskIntoConstraints="NO" id="NBg-P0-2GJ">
-                                <rect key="frame" x="35" y="302" width="139" height="169"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Promo-Facebook-Facebook feed-31" translatesAutoresizingMaskIntoConstraints="NO" id="Yew-wm-JDz">
-                                <rect key="frame" x="240" y="302" width="139" height="169"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Promo-Facebook-Facebook feed-32" translatesAutoresizingMaskIntoConstraints="NO" id="EkQ-X9-m2S">
-                                <rect key="frame" x="35" y="553" width="139" height="169"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rs. 1350.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJ5-P3-oas">
-                                <rect key="frame" x="64" y="509" width="81" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.81960784310000001" green="0.13725490200000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rs. 850.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zv-vX-QjG">
-                                <rect key="frame" x="272" y="509" width="75" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.81960784310000001" green="0.13725490200000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rs. 1550.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rd9-UH-4zu">
-                                <rect key="frame" x="64" y="759" width="81" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.81960784310000001" green="0.13725490200000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Berries'o'Berries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nq-Hg-oJg">
-                                <rect key="frame" x="44" y="479" width="121" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" name="AccentColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Iced Lemon Latte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9D-CT-pBh">
-                                <rect key="frame" x="246" y="479" width="126" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" name="AccentColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2-2" translatesAutoresizingMaskIntoConstraints="NO" id="kPH-7E-elc">
-                                <rect key="frame" x="240" y="553" width="139" height="169"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Orange Crunch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpn-0k-eJs">
-                                <rect key="frame" x="254" y="731" width="111" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" name="AccentColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chocolate Overdosed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQ1-5f-8jk">
-                                <rect key="frame" x="25" y="731" width="158" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" name="AccentColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wx5-Tg-AlP">
-                                <rect key="frame" x="0.0" y="847" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <items>
-                                    <tabBarItem title="" image="burger" id="ide-6s-zwf"/>
-                                    <tabBarItem title="" image="beverage" id="lcr-ER-20m"/>
-                                    <tabBarItem title="" image="dessert" id="BxQ-9N-1HE"/>
-                                </items>
-                                <color key="barTintColor" red="0.94117647059999998" green="0.6705882353" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tabBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rs. 850.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHY-Qu-Jgd">
-                                <rect key="frame" x="272" y="759" width="75" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.81960784310000001" green="0.13725490200000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Eah-ps-o0p"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lYx-Vf-k8N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="188" y="757"/>
-        </scene>
         <!--Burger Detailed View Controller-->
         <scene sceneID="TmR-7S-d88">
             <objects>
@@ -823,9 +689,6 @@ Fried Chicken</string>
                                             <connections>
                                                 <action selector="btnBack:" destination="dLY-1P-c6H" id="kCz-Fs-f8G"/>
                                             </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Cart" id="Rxi-Rw-mgE">
-                                            <color key="tintColor" red="0.1843137255" green="0.74901960779999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -866,13 +729,6 @@ Fried Chicken</string>
                                 <color key="textColor" red="0.81960784310000001" green="0.13725490200000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Size:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9o-Hu-eVp">
-                                <rect key="frame" x="202" y="346" width="37" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quantity:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EL-Im-UlO">
                                 <rect key="frame" x="202" y="430" width="70" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -880,15 +736,6 @@ Fried Chicken</string>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="x1u-JV-1tg">
-                                <rect key="frame" x="202" y="375" width="192" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Small"/>
-                                    <segment title="Medium"/>
-                                    <segment title="Large"/>
-                                </segments>
-                            </segmentedControl>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qhg-Ji-i9q">
                                 <rect key="frame" x="202" y="459" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -903,9 +750,8 @@ Fried Chicken</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4j-X8-HDk">
-                                <rect key="frame" x="20" y="732" width="374" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4j-X8-HDk">
+                                <rect key="frame" x="20" y="806" width="374" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add To Cart">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -926,6 +772,11 @@ Fried Chicken</string>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Yy5-4W-g6m"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yy5-4W-g6m" firstAttribute="trailing" secondItem="I4j-X8-HDk" secondAttribute="trailing" constant="20" id="E5Z-P5-T71"/>
+                            <constraint firstItem="Yy5-4W-g6m" firstAttribute="bottom" secondItem="I4j-X8-HDk" secondAttribute="bottom" constant="25" id="cMO-dp-g7s"/>
+                            <constraint firstItem="I4j-X8-HDk" firstAttribute="leading" secondItem="Yy5-4W-g6m" secondAttribute="leading" constant="20" id="qKn-iq-S5g"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Afu-yt-07b"/>
                     <connections>
@@ -949,19 +800,12 @@ Fried Chicken</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="b9f-se-BrI">
-                                <rect key="frame" x="0.0" y="-10" width="434" height="214"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="b9f-se-BrI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="b9f-se-BrI" secondAttribute="height" multiplier="69:34" id="6ds-Fu-tzI"/>
                                 </constraints>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ZV-kQ-bKV">
-                                <rect key="frame" x="0.0" y="204" width="434" height="53"/>
-                                <color key="barTintColor" red="0.94117647059999998" green="0.6705882353" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <items>
-                                    <navigationItem title="Cart View" id="lTc-oc-n9M"/>
-                                </items>
-                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnP-Js-9fs">
                                 <rect key="frame" x="10" y="281" width="205" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
@@ -1022,6 +866,13 @@ Fried Chicken</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ZV-kQ-bKV">
+                                <rect key="frame" x="0.0" y="204" width="414" height="53"/>
+                                <color key="barTintColor" red="0.94117647059999998" green="0.6705882353" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Cart View" id="lTc-oc-n9M"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="idQ-0g-qZf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1033,6 +884,7 @@ Fried Chicken</string>
                             <constraint firstItem="9Rc-j4-SrS" firstAttribute="leading" secondItem="idQ-0g-qZf" secondAttribute="leading" constant="200" id="9pt-FT-CbO"/>
                             <constraint firstItem="5ZV-kQ-bKV" firstAttribute="top" secondItem="sgG-Hu-c2w" secondAttribute="top" constant="204" id="FWk-UM-uHI"/>
                             <constraint firstItem="idQ-0g-qZf" firstAttribute="trailing" secondItem="hPS-xP-dwU" secondAttribute="trailing" constant="10" id="I76-Tb-evn"/>
+                            <constraint firstItem="b9f-se-BrI" firstAttribute="top" secondItem="sgG-Hu-c2w" secondAttribute="top" id="KJJ-GA-W9r"/>
                             <constraint firstItem="V2J-9S-GGQ" firstAttribute="leading" secondItem="VnP-Js-9fs" secondAttribute="leading" id="LKy-Sh-6wc"/>
                             <constraint firstItem="idQ-0g-qZf" firstAttribute="trailing" secondItem="Qfb-zZ-b5u" secondAttribute="trailing" constant="10" id="MLb-yU-kgG"/>
                             <constraint firstItem="V2J-9S-GGQ" firstAttribute="trailing" secondItem="idQ-0g-qZf" secondAttribute="trailing" constant="10" id="MQs-rl-mBT"/>
@@ -1070,27 +922,19 @@ Fried Chicken</string>
         <!--Deliver View Controller-->
         <scene sceneID="VmM-en-C3n">
             <objects>
-                <viewController id="HlH-2q-W1a" customClass="DeliverViewController" customModule="BurgerBrew" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="HlH-2q-W1a" customClass="DeliverViewController" customModule="BurgerBrew" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BRd-Oi-3Xq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="aFf-Gd-q7U">
-                                <rect key="frame" x="0.0" y="-614" width="414" height="968"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="aFf-Gd-q7U">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="aFf-Gd-q7U" secondAttribute="height" multiplier="207:167" id="gsd-7R-rkj"/>
-                                    <constraint firstAttribute="width" secondItem="aFf-Gd-q7U" secondAttribute="height" multiplier="207:167" id="gzh-fz-fpc"/>
+                                    <constraint firstAttribute="width" secondItem="aFf-Gd-q7U" secondAttribute="height" multiplier="217:107" id="DV3-4B-Nfr"/>
                                 </constraints>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zWW-KT-rki">
-                                <rect key="frame" x="0.0" y="364" width="414" height="56"/>
-                                <color key="barTintColor" red="0.94117647059999998" green="0.6705882353" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <items>
-                                    <navigationItem title="Submit Order" id="JH7-ld-SVM"/>
-                                </items>
-                            </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="qsc-Wl-oZn">
-                                <rect key="frame" x="10" y="437" width="394" height="395"/>
+                                <rect key="frame" x="10" y="310" width="394" height="395"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="On0-r0-huD">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="20.5"/>
@@ -1166,15 +1010,24 @@ Fried Chicken</string>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zWW-KT-rki">
+                                <rect key="frame" x="0.0" y="204" width="414" height="44"/>
+                                <color key="barTintColor" red="0.94117647059999998" green="0.6705882353" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Submit Order" id="JH7-ld-SVM"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wYX-2X-ALt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="wYX-2X-ALt" firstAttribute="trailing" secondItem="qsc-Wl-oZn" secondAttribute="trailing" constant="10" id="492-Qp-WT0"/>
-                            <constraint firstItem="wYX-2X-ALt" firstAttribute="bottom" secondItem="qsc-Wl-oZn" secondAttribute="bottom" constant="10" id="INe-QS-KvD"/>
                             <constraint firstItem="qsc-Wl-oZn" firstAttribute="leading" secondItem="wYX-2X-ALt" secondAttribute="leading" constant="10" id="OG1-br-rVQ"/>
-                            <constraint firstItem="zWW-KT-rki" firstAttribute="top" secondItem="aFf-Gd-q7U" secondAttribute="bottom" constant="10" id="vIW-BK-1CD"/>
-                            <constraint firstItem="qsc-Wl-oZn" firstAttribute="top" secondItem="zWW-KT-rki" secondAttribute="bottom" constant="17" id="xe0-LH-1MK"/>
+                            <constraint firstAttribute="trailing" secondItem="aFf-Gd-q7U" secondAttribute="trailing" id="WDk-iP-LFe"/>
+                            <constraint firstItem="aFf-Gd-q7U" firstAttribute="leading" secondItem="wYX-2X-ALt" secondAttribute="leading" id="eh6-uT-8Gp"/>
+                            <constraint firstItem="aFf-Gd-q7U" firstAttribute="top" secondItem="BRd-Oi-3Xq" secondAttribute="top" id="ib1-qp-EzX"/>
+                            <constraint firstItem="zWW-KT-rki" firstAttribute="top" secondItem="aFf-Gd-q7U" secondAttribute="bottom" id="rt3-Sa-eTv"/>
+                            <constraint firstItem="qsc-Wl-oZn" firstAttribute="top" secondItem="BRd-Oi-3Xq" secondAttribute="top" constant="310" id="zjT-yk-HlG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7Up-Lf-v5O"/>
@@ -1208,9 +1061,6 @@ Fried Chicken</string>
                                             <connections>
                                                 <action selector="btnBack:" destination="yhB-ga-CSt" id="lRZ-Df-QGR"/>
                                             </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Cart" id="DJQ-Lv-IuC">
-                                            <color key="tintColor" red="0.1843137255" green="0.74901960779999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -1251,13 +1101,6 @@ Fried Chicken</string>
                                 <color key="textColor" red="0.81960784310000001" green="0.13725490200000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Size:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wi-C3-9Tz">
-                                <rect key="frame" x="202" y="346" width="37" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quantity:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzh-1N-WxU">
                                 <rect key="frame" x="202" y="430" width="70" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1265,15 +1108,6 @@ Fried Chicken</string>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BeH-Qi-DrG">
-                                <rect key="frame" x="202" y="375" width="192" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Small"/>
-                                    <segment title="Medium"/>
-                                    <segment title="Large"/>
-                                </segments>
-                            </segmentedControl>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="FW5-2y-CSg">
                                 <rect key="frame" x="202" y="459" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1288,9 +1122,8 @@ Fried Chicken</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTM-yB-FzU">
-                                <rect key="frame" x="20" y="732" width="374" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTM-yB-FzU">
+                                <rect key="frame" x="20" y="806" width="374" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add To Cart">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1311,6 +1144,11 @@ Fried Chicken</string>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mOV-cs-Wik"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mOV-cs-Wik" firstAttribute="bottom" secondItem="wTM-yB-FzU" secondAttribute="bottom" constant="25" id="4Kc-Ok-vsG"/>
+                            <constraint firstItem="wTM-yB-FzU" firstAttribute="leading" secondItem="mOV-cs-Wik" secondAttribute="leading" constant="20" id="ja3-RA-LEE"/>
+                            <constraint firstItem="mOV-cs-Wik" firstAttribute="trailing" secondItem="wTM-yB-FzU" secondAttribute="trailing" constant="20" id="qPa-jK-8vH"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ptr-9h-BfI"/>
                     <connections>
@@ -1344,9 +1182,6 @@ Fried Chicken</string>
                                             <connections>
                                                 <action selector="btnBack:" destination="Z05-RA-ppB" id="czN-u5-Tc0"/>
                                             </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Cart" id="fr5-GM-Q9V">
-                                            <color key="tintColor" red="0.1843137255" green="0.74901960779999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -1387,13 +1222,6 @@ Fried Chicken</string>
                                 <color key="textColor" red="0.81960784310000001" green="0.13725490200000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Size:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7B-N4-0Yn">
-                                <rect key="frame" x="202" y="346" width="37" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quantity:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mA-5K-phA">
                                 <rect key="frame" x="202" y="430" width="70" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1401,15 +1229,6 @@ Fried Chicken</string>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7YL-i5-UUJ">
-                                <rect key="frame" x="202" y="375" width="192" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Small"/>
-                                    <segment title="Medium"/>
-                                    <segment title="Large"/>
-                                </segments>
-                            </segmentedControl>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="HSt-Iy-lsX">
                                 <rect key="frame" x="208" y="466" width="94" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1417,9 +1236,8 @@ Fried Chicken</string>
                                     <action selector="qtyValueChange:" destination="Z05-RA-ppB" eventType="valueChanged" id="GJz-bV-jMa"/>
                                 </connections>
                             </stepper>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzN-CL-liQ">
-                                <rect key="frame" x="20" y="732" width="374" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzN-CL-liQ">
+                                <rect key="frame" x="20" y="806" width="374" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add To Cart">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1447,6 +1265,11 @@ Fried Chicken</string>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B8E-N5-a8u"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RzN-CL-liQ" firstAttribute="leading" secondItem="B8E-N5-a8u" secondAttribute="leading" constant="20" id="MOP-rR-sDr"/>
+                            <constraint firstItem="B8E-N5-a8u" firstAttribute="bottom" secondItem="RzN-CL-liQ" secondAttribute="bottom" constant="25" id="nPP-ls-vCQ"/>
+                            <constraint firstItem="B8E-N5-a8u" firstAttribute="trailing" secondItem="RzN-CL-liQ" secondAttribute="trailing" constant="20" id="qFV-3j-KGz"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jRR-qA-yCS"/>
                     <connections>
@@ -1464,8 +1287,6 @@ Fried Chicken</string>
         </scene>
     </scenes>
     <resources>
-        <image name="2-1" width="1200" height="600"/>
-        <image name="2-2" width="1080" height="1350"/>
         <image name="4" width="1200" height="600"/>
         <image name="5" width="1200" height="600"/>
         <image name="6" width="1200" height="600"/>
@@ -1479,9 +1300,6 @@ Fried Chicken</string>
         <image name="Burgers" width="1450" height="350"/>
         <image name="DessertTabHeader" width="1200" height="600"/>
         <image name="Desserts" width="1450" height="350"/>
-        <image name="Promo-Facebook-Facebook feed-30" width="1080" height="1350"/>
-        <image name="Promo-Facebook-Facebook feed-31" width="1080" height="1350"/>
-        <image name="Promo-Facebook-Facebook feed-32" width="1080" height="1350"/>
         <image name="Promo-Facebook-Facebook instant articles" width="1200" height="1200"/>
         <image name="beverage" width="32" height="32"/>
         <image name="burger" width="32" height="32"/>

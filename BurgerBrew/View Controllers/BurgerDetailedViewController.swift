@@ -24,7 +24,8 @@ class BurgerDetailedViewController: UIViewController {
     
     @IBAction func btnBack(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let burgerView = storyboard.instantiateViewController(withIdentifier:"BurgerTabView") as! BurgerViewController
+        let burgerView = storyboard.instantiateViewController(withIdentifier:"tabBarController") as! TabBarController
+        burgerView.selectedPassedIndex = 0
         self.present(burgerView, animated: true)
         
     }

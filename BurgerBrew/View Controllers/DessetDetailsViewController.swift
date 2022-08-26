@@ -25,7 +25,8 @@ class DessetDetailsViewController: UIViewController {
     
     @IBAction func btnBack(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let dessertView = storyboard.instantiateViewController(withIdentifier:"DessertTabView") as! DessertViewController
+        let dessertView = storyboard.instantiateViewController(withIdentifier:"tabBarController") as! TabBarController
+        dessertView.selectedPassedIndex = 1
         self.present(dessertView, animated: true)
     }
     
