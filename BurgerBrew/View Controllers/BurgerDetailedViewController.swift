@@ -45,6 +45,7 @@ class BurgerDetailedViewController: UIViewController {
     
     @IBAction func addToCart(_ sender: Any) {
         addToCart()
+        showAlert()
     }
     
     func addToCart(){
@@ -61,6 +62,12 @@ class BurgerDetailedViewController: UIViewController {
             
         }
         
+    }
+    
+    func showAlert(){
+        let alert = UIAlertController(title: "Done!", message: "You successfully added the food item into the cart.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert,animated: true)
     }
   
     override func viewDidLoad() {

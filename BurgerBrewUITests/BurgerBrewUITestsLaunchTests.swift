@@ -16,7 +16,7 @@ class BurgerBrewUITestsLaunchTests: XCTestCase {
     override func setUpWithError() throws {
         continueAfterFailure = false
     }
-
+    /*
     func testLaunch() throws {
         let app = XCUIApplication()
         app.launch()
@@ -29,4 +29,5 @@ class BurgerBrewUITestsLaunchTests: XCTestCase {
         attachment.lifetime = .keepAlways
         add(attachment)
     }
+     */
 }

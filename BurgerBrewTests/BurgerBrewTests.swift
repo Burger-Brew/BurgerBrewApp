@@ -32,5 +32,20 @@ class BurgerBrewTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
+    
+    // Confirm that the Burger initializer returns a Burger object when passed valid parameters.
+    func testBurgerInitializationSucceeds() {
+        // Burger name is not empty and return a successful object
+        let notEmptyStringBurger = Burger.init(image: #imageLiteral(resourceName: "Toro Bravo.jpeg"), title: "Toro Bravo", price: "1600.00", description: "Roasted hatch chilies, candied bacon, white cheddar, andhabañero aioli")
+        XCTAssertNotNil(notEmptyStringBurger)
+        
+        // Dessert name is not empty and return a successful object
+        let notEmptyStringDessert = Dessert.init(image: #imageLiteral(resourceName: "Hazelnut Cupcake.jpeg"), title: "Hazelnut Cupcake", price: "800.00", description: "Eggs, granulated sugar, brown sugar, oil, and vanilla")
+        XCTAssertNotNil(notEmptyStringDessert)
+        
+        // Burger name is not empty and return a successful object
+        let notEmptyStringBeverage = Beverage.init(image: #imageLiteral(resourceName: "Orange Crush.png"), title: "Orange Crush", price: "1000.00", description: "Orange, white sugar")
+        XCTAssertNotNil(notEmptyStringBeverage)
+    }
+    
 }
