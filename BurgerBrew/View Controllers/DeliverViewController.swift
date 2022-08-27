@@ -17,13 +17,22 @@ class DeliverViewController: UIViewController, MFMailComposeViewControllerDelega
     @IBOutlet weak var mobileTxt: UITextField!
     @IBOutlet weak var cityTxt: UITextField!
     
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    private var models = [CartList]()
+    
     @IBAction func deliver(_ sender: Any) {
         if MFMailComposeViewController.canSendMail() {
+            let bodyContent = bodyContentMaker()
+            let address = addressTxt.text
+            let mobile = mobileTxt.text
+            var finalBodyContent = "<h1>Order Details</h1><ul>" + bodyContent
+            finalBodyContent += "</ul><p>" + address! + "</p><br><p>" + mobile! + "</p>"
             let vc = MFMailComposeViewController()
             vc.delegate = self
             vc.setSubject("Order Placed")
             vc.setToRecipients(["kevin.antony.software@gmail.com"])
-            vc.setMessageBody("<h1>Hello</h1>", isHTML: true)
+            vc.setMessageBody(bodyContent, isHTML: true)
             present(vc, animated: true)
         }
         else {
@@ -44,6 +53,14 @@ class DeliverViewController: UIViewController, MFMailComposeViewControllerDelega
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func bodyContentMaker() -> String {
+        var tempBody = ""
+        for foodItem in models {
+            tempBody = tempBody + "<Li>" + foodItem.itemName! + " : " + String(foodItem.qty) + "</li>"
+        }
+        return tempBody
     }
     
 
