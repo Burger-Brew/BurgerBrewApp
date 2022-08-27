@@ -85,6 +85,7 @@ class CartViewController: UIViewController , UITableViewDelegate, UITableViewDat
         return cell
     }
     func updateItem(item: CartList, newQtyText: String){
+        
         let myQty = Double(newQtyText)
         item.subTotal = myQty! * item.price
         item.qty = myQty!
