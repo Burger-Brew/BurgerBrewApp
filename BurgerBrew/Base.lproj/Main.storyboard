@@ -1019,7 +1019,13 @@ Fried Chicken</string>
                                 <rect key="frame" x="0.0" y="204" width="414" height="44"/>
                                 <color key="barTintColor" red="0.94117647059999998" green="0.6705882353" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <navigationItem title="Submit Order" id="JH7-ld-SVM"/>
+                                    <navigationItem title="Submit Order" id="JH7-ld-SVM">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="gh0-Th-KeU">
+                                            <connections>
+                                                <action selector="btnBack:" destination="HlH-2q-W1a" id="xHe-nj-wL8"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>

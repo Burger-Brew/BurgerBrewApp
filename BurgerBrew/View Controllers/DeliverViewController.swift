@@ -44,6 +44,14 @@ class DeliverViewController: UIViewController, MFMailComposeViewControllerDelega
         }
     }
     
+    @IBAction func btnBack(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let cartView = storyboard.instantiateViewController(withIdentifier:"tabBarController") as! TabBarController
+        cartView.selectedPassedIndex = 3
+        self.present(cartView, animated: true)
+    }
+    
+    
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         
         controller.dismiss(animated: true, completion: nil)
